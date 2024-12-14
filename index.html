@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sample/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemania</title>
+    <meta
+      name="description"
+      content="Cinemania is the ultimate source for the latest movies, upcoming releases, reviews, and much more. Stay updated with everything happening in the movie world!"
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cinemania.com/" />
+    <meta property="og:title" content="Cinemania - Your Go-To Movie Database" />
+    <meta
+      property="og:description"
+      content="Cinemania is your destination for all things movies, including upcoming releases, detailed movie reviews, and exclusive content."
+    />
+    <meta
+      property="og:image"
+      content="https://www.cinemania.com/images/cinemania-og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.cinemania.com/" />
+    <meta
+      property="twitter:title"
+      content="Cinemania - Your Go-To Movie Database"
+    />
+    <meta
+      property="twitter:description"
+      content="Stay on top of the latest movie releases and reviews with Cinemania. Explore the best in the world of cinema!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.cinemania.com/images/cinemania-twitter-image.jpg"
+    />
+
+    <!-- Other Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Cinemania Team" />
+    <meta
+      name="keywords"
+      content="movies, cinema, film reviews, upcoming movies, movie database, Cinemania"
+    />
+    <script type="module" crossorigin src="/sample/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/sample/assets/index-Sw2Jk4SN.css">
+  </head>
+  <body>
+    <header>
+      <section class="header-section container">
+  <div class="header-icon-container">
+    <svg width="1000" height="1000" class="header-icon">
+      <use href="/sample/assets/icon-logo-cinema-BTdC8QNG.svg#cinema"></use>
+    </svg>
+    <a href="index.html" class="header-title">Cinemania</a>
+  </div>
+  <ul id="header-links" class="header-link-container">
+    <li><a href="index.html">HOME</a></li>
+    <li><a class="catalog-button">CATALOG</a></li>
+    <li><a>LIBRARY</a></li>
+  </ul>
+  <div class="menu-button-div"><button class="menu-button">MENU</button></div>
+  <div class="toggle-container">
+    <div class="toggle-theme">
+      <input type="checkbox" id="theme-toggle" />
+      <label class="theme-toggle" for="theme-toggle">
+        <span class="toggle-sun">
+          <img
+            class="toggle-sun-icon"
+            src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2013C10.7614%2013%2013%2010.7614%2013%208C13%205.23858%2010.7614%203%208%203C5.23858%203%203%205.23858%203%208C3%2010.7614%205.23858%2013%208%2013Z'%20stroke='white'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M12.907%203.093L12.998%203.002M3.002%2012.998L3.093%2012.907M8%201.056V1M8%2015V14.944M1.056%208H1M15%208H14.944M3.093%203.093L3.002%203.002M12.998%2012.998L12.907%2012.907'%20stroke='white'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+            width="13"
+            height="13"
+            alt="Güneş"
+          />
+        </span>
+        <span class="toggle-moon">
+          <img
+            class="toggle-moon-icon"
+            src="data:image/svg+xml,%3csvg%20width='15'%20height='15'%20viewBox='0%200%2015%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.02604%207.77441C1.26766%2011.1211%204.20061%2013.8439%207.71076%2013.9933C10.1873%2014.0973%2012.4021%2012.9796%2013.731%2011.2185C14.2814%2010.4972%2013.9861%2010.0163%2013.0666%2010.1788C12.6169%2010.2568%2012.1538%2010.2893%2011.6706%2010.2698C8.38862%2010.1398%205.704%207.48199%205.69058%204.34329C5.68386%203.49851%205.86508%202.69921%206.19394%201.9714C6.55637%201.16561%206.12012%200.782204%205.28117%201.12662C2.62339%202.21184%200.80456%204.80467%201.02604%207.77441Z'%20stroke='white'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+            width="13"
+            height="13"
+            alt="Ay"
+          />
+        </span>
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+  </div>
+  <div class="responsive-menu">
+    <svg width="1000" height="1000" class="header-icon">
+      <use href="/sample/assets/icon-logo-cinema-BTdC8QNG.svg#cinema"></use>
+    </svg>
+    <ul id="header-links" class="header-link-container">
+      <li><a href="index.html">HOME</a></li>
+      <li><a>CATALOG</a></li>
+      <li><a>LIBRARY</a></li>
+    </ul>
+  </div>
+  <div class="responsive-overlay"></div>
+</section>
+
+    </header>
+    <main>
+      <section class="container">
+  <div id="heroMovies" class="hero-movies-container">
+    
+    <div id="movies-description-container">
+      
+    </div>
+    <div id="movies-image-container">
+      <div class="gradient"></div>
+    </div>
+  </div>
+  <div id="modal"></div>
+  
+</section>
+
+      <section class="container">
+  <div class="catalog-desc-container">
+    <p class="catalog-title">WEEKLY TRENDS</p>
+    <a class="catalog-link">See All</a>
+  </div>
+  <div id="catalog-movie-gallery" class="catalog-library-css"></div>
+  <!-- Sayfa numaraları, prev ve next butonlarını içeren div -->
+  <div class="pagination">
+    <button id="prevPageBtn" class="pagination-btn prev-btn">
+      <svg
+        class="pagi-svg"
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.9375 6.125L10.0625 14L17.9375 21.875"
+          stroke="#fff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <div class="page-numbers"></div>
+
+    <button id="nextPageBtn" class="pagination-btn next-btn">
+      <svg
+        class="pagi-svg"
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.0625 6.125L17.9375 14L10.0625 21.875"
+          stroke="#fff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
+</section>
+
+      <section class="upcoming container">
+  <h2 class="upcoming__title">UPCOMING THIS MONTH</h2>
+  <div class="upcoming-content">
+    <div class="upcoming-content__img-container">
+      <img class="upcoming-content__img" id="movie-poster" alt="Movie Poster" />
+    </div>
+    <div class="upcoming-content__desktop">
+      <h3 class="upcoming-content__name" id="movie-title">Movie Title</h3>
+
+      <div class="upcoming-thumb">
+        <ul class="upcoming-list">
+          <li class="upcoming-list__item">
+            <p class="upcoming-list__text">Release date</p>
+            <p class="upcoming-list__date" id="release-date">03.03.2023</p>
+          </li>
+          <li class="upcoming-list__item">
+            <p class="upcoming-list__text">Vote / Votes</p>
+            <p class="upcoming-list__vote">
+              <span class="vote" id="vote-average">7.3</span> /
+              <span class="vote" id="vote-count">1260</span>
+            </p>
+          </li>
+          <li class="upcoming-list__item">
+            <p class="upcoming-list__text">Popularity</p>
+            <p class="upcoming-list__pop" id="popularity">99.9</p>
+          </li>
+          <li class="upcoming-list__item">
+            <p class="upcoming-list__text">Genre</p>
+            <p class="upcoming-list__genre" id="genres">Comedy, action</p>
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="upcoming-content__title">About</h3>
+      <p class="upcoming-content__text" id="overview">
+        Movie overview will go here.
+      </p>
+
+      <button
+        type="button"
+        class="upcoming-content__btn orange-button"
+        id="upcoming-add-btn"
+      >
+        Add to my library
+      </button>
+      <button
+        type="button"
+        class="upcoming-content__btn-remove hidden white-button"
+        id="upcoming-remove-btn"
+      >
+        Remove from my library
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer>
+      <section class="footer-section">
+  <div class="footer-main-div">
+    <ul class="footer-ul">
+      <li class="footer-li">© 2023 | All Rights Reserved |</li>
+      <li class="footer-li">Developed with
+        <img src="heart-footer.svg" alt="Heart Icon" width="14" height="13" />
+         by GoIT Students</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </footer>
+    <section class="popup-section-container hidden">
+  <div class="popup-section">
+    <div class="popup-trailer"></div>
+    <button class="close-btn">
+      <svg class="close-svg" width="24" height="24">
+        <use href="/sample/assets/sprite-Cs5pSZ4c.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="popup-content-container">
+        <div class="popup-img-container">
+            <img class="afis-img" src="" alt="Movie Poster">
+        </div>
+        <div class="popup-film-info">
+          <div class="popup-film-content">
+            <h2 class="film-title"></h2>
+            <ul class="film-details">
+              <li>
+                <p>Vote / Votes</p>
+                <p>Popularity</p>
+                <p>Genre</p>
+              </li>
+              <li>
+                <p><span class="vote-description average-rating"></span> /
+                  <span class="vote-description vote-count"></span></p>
+                <p class="description popularity"></p>  
+                <p class="description genre"></p>
+              </li>
+            </ul>
+          </div>
+          <div class="popup-film-about-title">
+            <h3 class="film-about">ABOUT</h3>
+            <p class="film-about-desc"></p>
+          </div>
+          <div class="popup-buttons">
+            <button type="button" class="film-btn orange-button add-btn" id="popup-add-btn">Add to my library</button>
+            <button type="button" class="film-btn hidden white-button remove-btn" id="popup-remove-btn">Remove from my library</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+  </body>
+</html>
