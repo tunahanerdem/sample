@@ -1,0 +1,200 @@
+.toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 44px;
+  height: 20px;
+  background: var(--theme-toggle-background);
+  border: none;
+  border-radius: var(--btn-border-radius);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--main-text-color);
+  transition: background 0.4s var(--cubic), color 0.4s var(--cubic);
+}
+
+.toggle-slider {
+  position: absolute;
+  left: 4px;
+  width: 13.2px;
+  height: 13.5px;
+  background: #fff;
+  box-shadow: var(--cards-box-shadow);
+  border-radius: var(--btn-border-radius);
+  transition: transform 0.4s ease-in-out;
+}
+
+input[type='checkbox']:checked + label .toggle-slider {
+  transform: translateX(23px);
+}
+
+input[type='checkbox']:checked + label {
+  background: var(--brend-color);
+}
+
+.toggle-sun,
+.toggle-moon {
+  position: absolute;
+  top: 2px;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Smooth transition for sun and moon */
+  opacity: 1;
+}
+
+.toggle-sun {
+  left: 4px;
+  z-index: 1;
+}
+.toggle-sun-icon,
+.toggle-moon-icon {
+  width: 9.53px;
+  height: 9.75px;
+}
+
+.toggle-moon {
+  right: 5px;
+  z-index: 1;
+  transform: scale(1);
+}
+
+input[type='checkbox']:checked + label .toggle-sun {
+  transform: scale(1); /* show the sun */
+  opacity: 1;
+}
+
+input[type='checkbox']:checked + label .toggle-moon {
+  transform: scale(0); /* hide the moon */
+  opacity: 0;
+}
+
+input[type='checkbox'] + label .toggle-sun {
+  transform: scale(0); /* hide the sun */
+  opacity: 0;
+}
+
+input[type='checkbox'] + label .toggle-moon {
+  transform: scale(1); /* show the moon */
+  opacity: 1;
+}
+
+.header-section {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--main-black-color);
+  transition: background var(--transition);
+  box-shadow: var(--cards-box-shadow);
+}
+
+.header-icon {
+  width: 128px;
+  height: 128px;
+}
+
+.header-title {
+  display: none;
+  font-size: 2.4rem;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.header-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-link-container {
+  display: none;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--header-text-color);
+}
+
+.header-link-container li a {
+  transition: 0.2s ease-in-out;
+}
+
+.header-link-container li a:hover {
+  color: var(--brend-color);
+}
+.responsive-menu {
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 64%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--main-background);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+.responsive-menu .header-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  font-size: 1.6rem;
+}
+.active-responsive-menu {
+  transform: translateX(0%);
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--header-text-color);
+  padding: unset;
+  font-weight: 500;
+}
+
+.responsive-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--overlay-background);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0s 0.4s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--overlay-background);
+  font-size: 2rem;
+  text-align: center;
+}
+.active-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.active-link {
+  color: var(--brend-color);
+}

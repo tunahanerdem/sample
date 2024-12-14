@@ -1,0 +1,229 @@
+/* Mobile-First Varsayılan Stil */
+.upcoming {
+  margin-top: 20px;
+}
+
+.upcoming-content__desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+}
+
+.upcoming__title {
+  font-size: 1.6rem; 
+  padding: 10px 20px;
+  color: var(--main-text-color);
+  line-height: 1.8rem;
+}
+
+.upcoming-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.upcoming-content__img-container{
+  position: relative;
+  width: 100%;
+  height: 458px;
+  box-shadow: var(--cards-box-shadow);
+}
+
+.upcoming-content__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; /* Mobildeki maksimum genişlik */
+  border-radius: 5px; /* Figma'daki köşe yumuşatma */
+  object-fit: cover;
+}
+
+.upcoming-content__name {
+  font-size: 2rem;
+  color: var(--main-text-color);
+  margin:10px 0px 20px 0px;
+}
+
+.upcoming-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Bilgilerin yan yana yerleştirilmesi için flex düzeni */
+.upcoming-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.upcoming-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  color: var(--second-text-color);
+  font-size: 1.6rem;
+}
+
+.upcoming-list__text {
+  font-weight: bold;
+  color: var(--modal-keys-color);
+  font-size: 1.6rem;
+}
+
+.upcoming-list__date {
+  color: #f87719;
+  font-size: 1.6rem;
+}
+
+.upcoming-list__vote,
+.upcoming-list__pop,
+.upcoming-list__genre {
+  font-size: 1.6rem;
+  color: var(--second-text-color);
+}
+
+/* Vote için arka plan rengi */
+.upcoming-list__vote span {
+  padding: 2px 6px;
+  background-color: var(--second-text-color);
+  color: var(--main-background);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.upcoming-content__title {
+  font-size: 2.4rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--modal-keys-color);
+}
+
+.upcoming-content__text {
+  font-size: 1.4rem;
+  color: var(--second-text-color);
+}
+
+.upcoming-content__btn,
+.upcoming-content__btn-remove {
+  margin-top: 12px;
+}
+
+/* Tablet ve Daha Büyük Ekranlar İçin (min-width: 768px) */
+@media (min-width: 768px) {
+  .upcoming-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .upcoming-content__title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .upcoming-content__img-container{
+    width: 100%;
+  }
+
+  .upcoming-content__name {
+    font-size: 1.8rem;
+  }
+
+  .upcoming__title {
+    font-size: 2.4rem;
+  }
+
+  .upcoming-thumb {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .upcoming-list {
+    width: 100%;
+  }
+  .upcoming-list__item {
+    font-size: 1.6rem;
+  }
+
+  .upcoming-content__btn,
+  .upcoming-content__btn-remove {
+    width: auto; /* Tablet ve üzeri için genişlik sınırlaması yok */
+  }
+}
+
+/* Masaüstü ve Daha Geniş Ekranlar İçin (min-width: 1200px) */
+@media (min-width: 1280px) {
+  .upcoming {
+    margin-top: 50px;
+  }
+
+  .upcoming__title {
+    font-size: 2.8rem; /* Masaüstü için başlık boyutu */
+    line-height: 3.2rem;
+  }
+
+  .upcoming-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 458px;
+    gap: 40px;
+  }
+  .upcoming-content__name {
+    font-size: 3.2rem;
+    margin-top: unset;
+  }
+  .upcoming-content__img-container{
+    position: relative;
+    width: 805px;
+    height: 100%;
+    box-shadow: var(--cards-box-shadow);
+  }
+
+  .upcoming-content__img {
+    border-radius: var(--cards-border-radius);
+    box-shadow: var(--cards-box-shadow); /* Görsel gölge efekti */
+  }
+
+  .upcoming-content__desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+  }
+
+  /* Alt alta sıralamak için */
+  .upcoming-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .upcoming-list__item {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+
+  .upcoming-list__text {
+    font-weight: bold;
+    color: var(--main-text-color);
+  }
+
+  .upcoming-content__btn,
+  .upcoming-content__btn-remove {
+    padding: 12px 24px;
+    font-size: 1.4rem;
+  }
+}

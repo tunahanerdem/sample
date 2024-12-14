@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+  .header-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .toggle-sun,
+  .toggle-moon {
+    top: 6px;
+  }
+  .toggle-sun-icon,
+  .toggle-moon-icon {
+    width: 13px;
+    height: 13px;
+  }
+  .theme-toggle {
+    width: 60px;
+    height: 24px;
+  }
+  .menu-button-div {
+    display: none;
+  }
+  
+  .header-link-container {
+    display: flex;
+    font-size: 1.4rem;
+    gap: 30px;
+  }
+  .toggle-slider{
+    height: 18px;
+    width: 18px;
+    left: 4.5px;
+  }
+  input[type='checkbox']:checked + label .toggle-slider {
+    transform: translateX(32px);
+  }
+
+}
+
+@media (min-width: 470px) {
+  .header-title {
+    display: block;
+  }
+  .menu-button-div{
+    display: none;
+  }
+  .header-link-container{
+    display: flex;
+  }
+}

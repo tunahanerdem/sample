@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  .stars-container svg {
+    height: 20px;
+    width: 20px;
+  }
+  .hero-movie-title {
+    font-size: 3.7rem;
+    min-width: 457px;
+  }
+  .desc-button-container{
+    gap: 28px;
+  }
+  .hero-movie-desc{
+    min-width: 357px;
+  }
+}

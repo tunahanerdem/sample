@@ -1,0 +1,13 @@
+@import url('footer.css');
+@import url('footer-tablet.css');
+
+@media (min-width: 1280px) {
+  .footer-section {
+    font-size: 1.6rem;
+    line-height: 1.875rem;
+  }
+  .footer-ul {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+}

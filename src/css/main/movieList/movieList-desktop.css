@@ -1,0 +1,25 @@
+@import url('movieList.css');
+@import url('movieList-tablet.css');
+
+@media (min-width: 1280px) {
+  .catalog-library-css {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catalog-movie-info {
+    padding: 20px;
+    gap: 10px;
+  }
+  .catalog-movie-details{
+    font-size: 1.4rem;
+  }
+  .catalog-movie-rating svg {
+    height: 18px;
+    width: 18px;
+  }
+  .catalog-movie-title{
+    font-size: 1.6rem;
+  }
+  .catalog-desc-container{
+    font-size: 2.8rem;
+  }
+}

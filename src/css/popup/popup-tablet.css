@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+  .popup-section {
+    width: 704px;
+    min-height: 488px;
+    padding: 44px;
+  }
+
+  .popup-content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 100%;
+    margin: unset;
+  }
+
+  .popup-film-content {
+    gap: 26px;
+  }
+
+  .popup-img-container {
+    width: 450px;
+  }
+  
+
+  .film-title {
+    font-size: 2.4rem;
+    line-height: 28.13px;
+    margin: unset;
+  }
+
+  .film-details {
+    line-height: 1.9em;
+  }
+
+  .film-about-title {
+    font-size: 1.2rem;
+  }
+  .popup-trailer{
+    height: 400px;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+  .popup-trailer iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .no-trailer-container{
+    display: flex;
+    align-items: center;
+  }
+  .no-trailer-desc{
+    flex: 1;
+    height: 100%;
+  }
+
+}

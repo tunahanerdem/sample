@@ -1,0 +1,32 @@
+@import url('popup.css');
+@import url('popup-tablet.css');
+
+@media screen and (min-width: 1280px) {
+  .popup-section {
+    width: 846px;
+    height: 598px;
+    padding: 60px;
+  }
+
+  .popup-img-container {
+    width: 600px
+  }
+
+  .popup-film-content {
+    gap: 28px;
+  }
+
+  .film-title {
+    line-height: 32px;
+  }
+
+  .film-about-title {
+    font-size: 1.6rem;
+  }
+  .no-trailer-desc{
+    gap: 20px;
+    font-size: 2rem;
+    height: 100%;
+  }
+  
+}

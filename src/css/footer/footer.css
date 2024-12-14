@@ -1,0 +1,20 @@
+.footer-section {
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: var(--header-text-color);
+  }
+  .footer-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+  .footer-li {
+    margin: 0 15px; /* Aralarına boşluk bırak */
+  }

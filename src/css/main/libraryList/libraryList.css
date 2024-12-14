@@ -1,0 +1,50 @@
+#film-category{
+    width: 17.3rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    color: var(--main-text-color);
+    background-color: var(--main-background);
+    align-self: start;
+    appearance: none;
+    margin: 4em 0 2em 2em;
+    padding-left: 1em;
+    font-size: 1.4rem;
+}
+
+.load-more-button{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin:24px auto 0px auto;
+}
+.search-movie-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px auto 0px auto;
+}
+
+.empty-library-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.empty-library-title{
+    font-size: 2rem;
+}
+
+.removed-message{
+    text-align: center;
+}
+
+.removed-message-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.6rem;
+}

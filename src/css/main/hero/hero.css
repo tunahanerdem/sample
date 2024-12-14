@@ -1,0 +1,98 @@
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.98) 15%,
+    rgba(0, 0, 0, 0.9) 35%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0) 80%
+  );
+}
+
+.image {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 4%;
+}
+
+#movies-image-container {
+  height: 380px;
+}
+
+#movies-description-container {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  z-index: 10;
+  gap: 20px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero-movies-container {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+.desc-button-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-movie-desc {
+  color: white;
+  font-size: 1.4rem;
+  min-width: 235px;
+  line-height: 16.41px;
+}
+
+.stars-container {
+  color: white;
+  list-style: none;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 4px;
+}
+.stars-container svg{
+  height: 16px;
+  width: 16px;
+}
+
+.hero-movie-title {
+  color: white;
+  font-size: 3.2rem;
+  min-width: 235px;
+}
+
+.hero-movie-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.star-icon-empty{
+  stroke:var(--brend-color) ;
+  fill: transparent;
+}
+
+.star-icon-full{
+  fill: var(--brend-color-rgba);
+  stroke:var(--brend-color) ;
+}
+
+.star-icon-half{
+  fill: transparent;
+  stroke:var(--brend-color) ;
+}
+.btn-hero.details{
+  color: #fff ;
+}

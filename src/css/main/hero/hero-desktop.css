@@ -1,0 +1,30 @@
+@import url('hero.css');
+@import url('hero-tablet.css');
+
+@media (min-width: 1280px) {
+  .stars-container svg {
+    height: 24px;
+    width: 24px;
+  }
+  .hero-movies-container {
+    height: 678px;
+    box-shadow: 0px 10px 20px 0px #00000080;
+    overflow: hidden;
+  }
+  .hero-movie-title {
+    font-size: 6.4rem;
+    min-width: 583px;
+  }
+  .hero-movie-desc {
+    width: 400px;
+    font-size: 1.6rem;
+    line-height: 18.75px;
+  }
+  #movies-description-container {
+    top: 118px;
+    left: 135px;
+  }
+  .desc-button-container{
+    gap: 36px;
+  }
+}

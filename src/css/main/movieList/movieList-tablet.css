@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  .catalog-library-css {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catalog-movie-title{
+    font-size: 1.4rem;
+  }
+  .catalog-movie-details{
+    font-size: 1.2rem;
+  }
+  .catalog-movie-rating svg {
+    height: 1rem;
+    width: 1rem;
+  }
+  .catalog-movie-info{
+    padding: 12px;
+  }
+
+  .pagination {
+    max-height: fit-content;
+  }
+  .catalog-desc-container {
+    font-size: 2.4rem;
+  }
+}
+

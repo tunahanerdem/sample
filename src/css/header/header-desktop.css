@@ -1,0 +1,10 @@
+@import url('header.css');
+@import url('header-tablet.css');
+
+@media (min-width: 1280px) {
+  .header-title {
+    font-size: 2.4rem;
+  }
+
+  
+}
